@@ -35,7 +35,7 @@ This project uses Gradle as a build tool. To build and run the project, follow t
 
 1. Clone this repository:
    ```sh
-   git clone https://github.com/your-username/prim-algorithm.git
+   git clone https://github.com/marco-orru/prim-algorithm.git
    cd prim-algorithm
    ```
 
