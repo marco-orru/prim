@@ -31,7 +31,7 @@ public interface AbstractGraph<V, L> {
      *
      * @param node The node to be added.
      * @return {@code true} if the node was successfully added, {@code false}
-     *         otherwise.
+     * otherwise.
      * @implSpec This operation shall have constant time complexity O(1).
      */
     boolean addNode(V node);
@@ -46,7 +46,7 @@ public interface AbstractGraph<V, L> {
      * @param label The label associated with the edge (it is ignored if the graph
      *              is not labelled).
      * @return {@code true} if the edge was successfully added,
-     *         {@code false otherwise}.
+     * {@code false otherwise}.
      * @implSpec This operation shall have constant time complexity O(1).
      */
     boolean addEdge(V start, V end, L label);
@@ -56,7 +56,7 @@ public interface AbstractGraph<V, L> {
      *
      * @param node The node to check for.
      * @return {@code true} if the node is present in the graph, {@code false}
-     *         otherwise.
+     * otherwise.
      * @implSpec This operation shall have constant time complexity O(1).
      */
     boolean containsNode(V node);
@@ -78,7 +78,7 @@ public interface AbstractGraph<V, L> {
      *
      * @param node The node to be removed.
      * @return {@code true} if the node was successfully removed, {@code false}
-     *         otherwise.
+     * otherwise.
      * @implSpec This operation shall have linear time complexity O(N).
      */
     boolean removeNode(V node);
@@ -89,7 +89,7 @@ public interface AbstractGraph<V, L> {
      * @param start The start node of the edge.
      * @param end   The end node of the edge.
      * @return {@code true} if the edge was successfully removed, {@code false}
-     *         otherwise.
+     * otherwise.
      * @implSpec This operation shall have constant time complexity O(1).
      */
     boolean removeEdge(V start, V end);

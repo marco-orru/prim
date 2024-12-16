@@ -1,9 +1,9 @@
 package org.unito.asd.prim;
 
-import java.util.Objects;
-
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
+
+import java.util.Objects;
 
 /**
  * Represents an edge between to nodes of a {@link Graph}.

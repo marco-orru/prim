@@ -1,16 +1,10 @@
 package org.unito.asd.prim;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.NoSuchElementException;
-import java.util.Objects;
-
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.*;
 
 /**
  * Represents a generic priority queue.
@@ -58,7 +52,7 @@ public final class PriorityQueue<E> implements AbstractQueue<E> {
      *
      * @param element The element to be pushed.
      * @return {@code true} if the element is successfully pushed, {@code false}
-     *         otherwise.
+     * otherwise.
      * @implNote This operation has logarithmic time complexity O(log N).
      */
     @Override
@@ -95,7 +89,7 @@ public final class PriorityQueue<E> implements AbstractQueue<E> {
      * Accesses the element at the top of the priority queue without removing it.
      *
      * @return The element at the top of the queue, or {@code null} if the queue is
-     *         empty.
+     * empty.
      * @implNote This operation has constant time complexity O(1).
      */
     @Override
@@ -127,7 +121,7 @@ public final class PriorityQueue<E> implements AbstractQueue<E> {
      *
      * @param element The element to be removed.
      * @return {@code true} if the element is successfully removed, {@code false}
-     *         otherwise.
+     * otherwise.
      * @implNote This operation has logarithmic time complexity O(log N).
      */
     @Override
@@ -137,9 +131,7 @@ public final class PriorityQueue<E> implements AbstractQueue<E> {
 
         if (empty() || (indexMap.get(element) == null)) {
             return false;
-        }
-
-        else {
+        } else {
             int elementIndex = indexMap.get(element);
             int lastIndex = heap.size() - 1;
 

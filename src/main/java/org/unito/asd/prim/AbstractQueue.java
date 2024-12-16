@@ -20,7 +20,7 @@ public interface AbstractQueue<E> {
      *
      * @param element The element to be pushed.
      * @return {@code true} if the element is successfully pushed, {@code false}
-     *         otherwise.
+     * otherwise.
      * @implSpec This operation shall have logarithmic time complexity O(log N).
      */
     boolean push(E element);
@@ -54,7 +54,7 @@ public interface AbstractQueue<E> {
      *
      * @param element The element to be removed.
      * @return {@code true} if the element is successfully removed, {@code false}
-     *         otherwise.
+     * otherwise.
      * @implSpec This operation shall have logarithmic time complexity O(log N).
      */
     boolean remove(E element);

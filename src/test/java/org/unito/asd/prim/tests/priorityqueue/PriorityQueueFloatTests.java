@@ -4,9 +4,9 @@ import org.junit.Before;
 import org.junit.Test;
 import org.unito.asd.prim.PriorityQueue;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import java.util.Comparator;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class PriorityQueueFloatTests {
     private PriorityQueue<Float> priorityQueue;

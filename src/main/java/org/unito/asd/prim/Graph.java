@@ -1,11 +1,11 @@
 package org.unito.asd.prim;
 
-import java.util.*;
-
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.annotations.Unmodifiable;
+
+import java.util.*;
 
 /**
  * Represents a graph optimized for sparse data.
@@ -67,7 +67,7 @@ public class Graph<V, L> implements AbstractGraph<V, L> {
      *
      * @param node The node to be added.
      * @return {@code true} if the node was successfully added, {@code false}
-     *         otherwise.
+     * otherwise.
      * @implNote This operation has constant time complexity O(1).
      */
     @Override
@@ -97,7 +97,7 @@ public class Graph<V, L> implements AbstractGraph<V, L> {
      * @param label The label associated with the edge (it is ignored if the graph
      *              is not labelled).
      * @return {@code true} if the edge was successfully added,
-     *         {@code false otherwise}.
+     * {@code false otherwise}.
      * @implNote This operation has constant time complexity O(1).
      */
 
@@ -139,7 +139,7 @@ public class Graph<V, L> implements AbstractGraph<V, L> {
      *
      * @param node The node to check for.
      * @return {@code true} if the node is present in the graph, {@code false}
-     *         otherwise.
+     * otherwise.
      * @implNote This operation has constant time complexity O(1).
      */
     @Override
@@ -186,7 +186,7 @@ public class Graph<V, L> implements AbstractGraph<V, L> {
      *
      * @param node The node to be removed.
      * @return {@code true} if the node was successfully removed, {@code false}
-     *         otherwise.
+     * otherwise.
      * @implNote This operation has linear time complexity O(N).
      */
     @Override
@@ -221,7 +221,7 @@ public class Graph<V, L> implements AbstractGraph<V, L> {
      * @param start The start node of the edge.
      * @param end   The end node of the edge.
      * @return {@code true} if the edge was successfully removed, {@code false}
-     *         otherwise.
+     * otherwise.
      * @implSpec This operation has constant time complexity O(1).
      */
     @Override
@@ -358,7 +358,7 @@ public class Graph<V, L> implements AbstractGraph<V, L> {
      * @param start The start node of the edge.
      * @param end   The end node of the edge.
      * @return The label associated with the edge, if exists, or {@code null} if the
-     *         edge does not exist.
+     * edge does not exist.
      * @throws IllegalStateException The graph is not labelled.
      * @implNote This operation has constant time complexity O(1).
      */
